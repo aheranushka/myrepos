@@ -1,0 +1,13 @@
+div {
+    width: 400px;
+    height: 200px;
+    border: 1px solid gray;   
+    background:linear-gradient(to top,red,red) no-repeat, linear-gradient(to right,black, white) no-repeat  100% 0 tomato; 
+    background-size: 20% auto, 80% auto;
+    animation: animate 4s infinite alternate;
+  }
+  @keyframes animate {
+  from {  background-size: 20% auto, 80% auto;}
+  30% {  background-size: 10% auto, 10% auto;}
+  90%, to {  background-size: 70% auto, 30% auto;}
+  }
